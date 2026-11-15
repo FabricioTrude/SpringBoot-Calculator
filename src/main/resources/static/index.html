@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <h1>Calculadora Springboot</h1>
+        <input
+            type="number"
+            id="number1"
+            placeholder="Primeiro número"
+            step="any"
+            required
+        >
+        <input
+            type="number"
+            id="number2"
+            placeholder="Segundo número"
+            step="any"
+            required
+        >
+
+        <div class="operations">
+            <button class="operation" data-operation="add">+</button>
+            <button class="operation" data-operation="subtract">−</button>
+            <button class="operation" data-operation="multiply">×</button>
+            <button class="operation" data-operation="divide">÷</button>
+        </div>
+
+        <button id="send">ENVIAR</button>
+        <button id="clear">LIMPAR</button>
+
+        <p id="result">Resultado aparecerá aqui</p>
+
+    </main>
+</body>
+</html>
